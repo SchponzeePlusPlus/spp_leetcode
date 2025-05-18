@@ -49,7 +49,8 @@ The second train of thought is, without changing the array, can we use additiona
  *
  */
 
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 //User function Template for C
 
@@ -59,7 +60,58 @@ The second train of thought is, without changing the array, can we use additiona
  * Note: The returned array must be malloced, assume caller calls free().
  */
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
-    // Visible in Leetcode Editor: Ends Here
+	// Visible in Leetcode Editor: Ends Here
+	// Submission to Leetcode starts here
+
+	/*
+	 * malloc()
+	 * https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
+	 * The malloc() (stands for memory allocation) function is used to allocate a single
+	 * block of * contiguous memory on the heap at runtime. The memory allocated by malloc()
+	 * is uninitialized, * meaning it contains garbage values.
+	 * 
+	 * Syntax:
+	 * malloc(size);
+	 * where size is the number of bytes to allocate.
+	 * This function returns a void pointer to the allocated memory that needs to be
+	 * converted to the pointer of required type to be usable. If allocation fails,
+	 * it returns NULL pointer.
+	 */
+	// I use target because it's an already existing integer variable that I can
+	//   use to measure the memory allocation I need
+	int *result = (int *)malloc(int(sizeof(target) * returnSize));
+
+	bool bo_chkTwoSumArrComplete = false;
+
+	int i = 0;
+	int j = 1;
+	while ((i < numsSize) && (!bo_chkTwoSumArrComplete))
+	{
+		while ((j < numsSize) && (!bo_chkTwoSumArrComplete))
+		{
+			bo_chkTwoSumArrComplete = (((nums[i] + nums[j]) == target) && (i != j));
+		}
+		if (!bo_chkTwoSumArrComplete)
+		{
+			i++;
+			j++;
+		}
+		
+	}
+
+	if (bo_chkTwoSumArrComplete)
+	{
+		result[0] = i;
+		result[1] = j;
+	}
+	else
+	{
+		result = NULL;
+	}
+
+	return result;
+
+	// Submission to Leetcode ends here
 }
 
 //{ Driver Code Starts
@@ -67,18 +119,29 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 
 int main()
 {
-    int t;
-    scanf("%d", &t);
-    while(t--)
-    {   
-        int a;
-        scanf("%d", &a);
-        updateVar(&a);
-        printf("%d\n", a);
-        printf("~%s", "\n");
-    }
-    return 0;
+	int* nums.....up to this part;
+	char char_chkProgUsrTerminate = 'y';
+
+	scanf("%d", &t);
+
+	twoSum()
+	
+	while((chkProgUsrTerminate == 'y'))
+	{   
+		int a;
+		
+		scanf("%d", &a);
+		twoSum(&a);
+
+		printf("%d\n", a);
+		printf("~%s", "\n");
+
+		printf("Try again? (y/n)", "\n");
+		scanf(char_chkProgUsrTerminate);
+	}
+
+	return 0;
 }
 // } Driver Code Ends
 
-// Result in GeeksForGeeks: Correct
+// Result in Leetcode: N/A
