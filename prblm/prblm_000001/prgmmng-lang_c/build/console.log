@@ -47,17 +47,15 @@ Output Data
 Test Case Output Array: [ 0, 1 ]
 
 
-
-----------------------------------------
-Program Complete.
-Terminating Program...
-----------------------------------------
+Test Case 2
 
 
+Input Data
 
-Finished Running Target Program:
+Test Case Input Array:  [ 3, 2, 4 ]
 
+Test Case Number Array Element Length:  3
 
-End of shell script
+Test Case Target Sum:   6
 
-user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/prgmmng-lang_c$
+Test Case Sum Array Element Length:     2

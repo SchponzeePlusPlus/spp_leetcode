@@ -128,21 +128,21 @@ int main()
 	printf("----------------------------------------\n\n\n");
 	fflush(stdout);
 
-	//int* intArr_testCaseNums = NULL;
+	int* intArr_testCaseNums;
 	int intArr_testCaseNumsArrLen = 0;
-	//int* intArr_testCaseNumsTargetSumElems = NULL;
+	int* intArr_testCaseNumsTargetSumElems;
 	int int_testCaseTargetSum = 0;
 	int* intArr_testCaseNumsTargetSumElemsArrLen;
 	
 	char char_chkProgUsrTerminate = 'y';
 
 	intArr_testCaseNumsArrLen = 4;
-	//intArr_testCaseNums = (int *)malloc(((int) sizeof(int)) * ((int) intArr_testCaseNumsArrLen));
-	/* intArr_testCaseNums[0] = 2;
+	intArr_testCaseNums = (int *)malloc(((int) sizeof(int)) * ((int) intArr_testCaseNumsArrLen));
+	intArr_testCaseNums[0] = 2;
 	intArr_testCaseNums[1] = 7;
 	intArr_testCaseNums[2] = 11;
-	intArr_testCaseNums[3] = 15; */
-	int intArr_testCaseNums[] = {2, 7, 11, 15};
+	intArr_testCaseNums[3] = 15;
+	//intArr_testCaseNums = [2, 7, 11, 15];
 	int_testCaseTargetSum = 9;
 	intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
 	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
@@ -171,7 +171,7 @@ int main()
 
 	fflush(stdout);
 
-	int* intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
+	intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
 
 	fflush(stdout);
 	printf("\nOutput Data\n\n");
@@ -185,6 +185,68 @@ int main()
 	printf("%d", intArr_testCaseNumsTargetSumElems[(*intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
 	printf(" ]\n\n");
 	fflush(stdout);
+
+	// Free the memory after completing
+	// operations
+	free(intArr_testCaseNums);
+	free(intArr_testCaseNumsTargetSumElemsArrLen);
+	free(intArr_testCaseNumsTargetSumElems);
+
+	// Test Case 2
+	intArr_testCaseNumsArrLen = 3;
+	intArr_testCaseNums = (int *)malloc(((int) sizeof(int)) * ((int) intArr_testCaseNumsArrLen));
+	intArr_testCaseNums[0] = 3;
+	intArr_testCaseNums[1] = 2;
+	intArr_testCaseNums[2] = 4;
+	//intArr_testCaseNums = [2, 7, 11, 15];
+	int_testCaseTargetSum = 6;
+	intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
+	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
+
+	fflush(stdout);
+	printf("\nTest Case 2\n\n");
+	printf("\nInput Data\n\n");
+	printf("Test Case Input Array:	");
+	printf("[ ");
+	for (int i = 0; i < (intArr_testCaseNumsArrLen - 1); i++)
+	{
+		printf("%d", intArr_testCaseNums[i]);
+		printf(", ");
+	}
+	printf("%d", intArr_testCaseNums[(intArr_testCaseNumsArrLen - 1)]);
+	printf(" ]\n");
+
+	printf("\nTest Case Number Array Element Length:	");
+	printf("%d\n", intArr_testCaseNumsArrLen);
+
+	printf("\nTest Case Target Sum:	");
+	printf("%d\n", int_testCaseTargetSum);
+
+	printf("\nTest Case Sum Array Element Length:	");
+	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
+
+	fflush(stdout);
+
+	intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
+
+	fflush(stdout);
+	printf("\nOutput Data\n\n");
+	printf("Test Case Output Array:	");
+	printf("[ ");
+	for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
+	{
+		printf("%d", intArr_testCaseNumsTargetSumElems[i]);
+		printf(", ");
+	}
+	printf("%d", intArr_testCaseNumsTargetSumElems[(*intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
+	printf(" ]\n\n");
+	fflush(stdout);
+
+	// Free the memory after completing
+	// operations
+	free(intArr_testCaseNums);
+	free(intArr_testCaseNumsTargetSumElemsArrLen);
+	free(intArr_testCaseNumsTargetSumElems);
 	
 	/*
 	while((char_chkProgUsrTerminate == 'y'))
@@ -204,6 +266,8 @@ int main()
 
 	// Free the memory after completing
 	// operations
+	//free(intArr_testCaseNums);
+	//free(intArr_testCaseNumsTargetSumElemsArrLen);
 	//free(intArr_testCaseNumsTargetSumElems);
 
 	fflush(stdout);
