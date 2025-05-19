@@ -42,6 +42,15 @@ Test Case Target Sum:   9
 
 Test Case Sum Array Element Length:     2
 
+About to enter twoSum() function...
+
+
+Entered twoSum() function.
+
+
+twoSum() function almost complete, returning result...
+
+
 Output Data
 
 Test Case Output Array: [ 0, 1 ]
@@ -59,3 +68,32 @@ Test Case Number Array Element Length:  3
 Test Case Target Sum:   6
 
 Test Case Sum Array Element Length:     2
+
+About to enter twoSum() function...
+
+
+Entered twoSum() function.
+
+
+twoSum() function almost complete, returning result...
+
+
+Output Data
+
+Test Case Output Array: [ 1, 2 ]
+
+
+
+----------------------------------------
+Program Complete.
+Terminating Program...
+----------------------------------------
+
+
+
+Finished Running Target Program:
+
+
+End of shell script
+
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/prgmmng-lang_c$ 

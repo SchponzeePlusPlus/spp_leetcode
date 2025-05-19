@@ -54,8 +54,24 @@ The second train of thought is, without changing the array, can we use additiona
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+// To use time library of C
+#include <time.h>
 
 //User function Template for C
+
+// https://www.geeksforgeeks.org/time-delay-c/
+void delay(int number_of_seconds)
+{
+	// Converting time into milli_seconds
+	int milli_seconds = 1000 * number_of_seconds;
+
+	// Storing start time
+	clock_t start_time = clock();
+
+	// looping till required time is not achieved
+	while (clock() < start_time + milli_seconds)
+		;
+}
 
 // Visible in Leetcode Editor: Begins Here
 
@@ -65,6 +81,9 @@ The second train of thought is, without changing the array, can we use additiona
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	// Visible in Leetcode Editor: Ends Here
 	// Submission to Leetcode starts here
+
+	printf("\nEntered twoSum() function.\n\n");
+	fflush(stdout);
 
 	/*
 	 * malloc()
@@ -82,22 +101,42 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	 */
 	// I use target because it's an already existing integer variable that I can
 	//   use to measure the memory allocation I need
-	int *result = (int *)malloc(((int) sizeof(int)) * ((int) *returnSize));
+	int *result;
+	
+	result = (int *)malloc(((int) sizeof(int)) * ((int) *returnSize));
+
+	/* printf("\nResult memory allocated, continuing with function calculation...\n\n");
+	fflush(stdout); */
 
 	bool bo_chkTwoSumArrComplete = false;
 
 	int i = 0;
 	int j = 1;
-	while ((i < numsSize) && (!bo_chkTwoSumArrComplete))
+
+	/* printf("\nOther local variables declared, continuing with function calculation...\n\n");
+	fflush(stdout); */
+
+	while ((i < (numsSize - 1)) && (!bo_chkTwoSumArrComplete))
 	{
 		while ((j < numsSize) && (!bo_chkTwoSumArrComplete))
 		{
+			/* printf("i : %d\n", i);
+			printf("j : %d\n", j);
+			fflush(stdout); */
 			bo_chkTwoSumArrComplete = (((nums[i] + nums[j]) == target) && (i != j));
+
+			if (!bo_chkTwoSumArrComplete)
+			{
+				j++;
+			}
+
+			//delay(1000);
 		}
 		if (!bo_chkTwoSumArrComplete)
 		{
 			i++;
-			j++;
+			j = 1;
+			//j++;
 		}
 		
 	}
@@ -109,11 +148,16 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	}
 	else
 	{
-		result = NULL;
+		// Used {result = NULL;} previously
+		result[0] = -1;
+		result[1] = -2;
 	}
 
-	return result;
+	printf("\ntwoSum() function almost complete, returning result...\n\n");
+	fflush(stdout);
 
+	return result;
+	free(result);
 	// Submission to Leetcode ends here
 }
 
@@ -169,6 +213,7 @@ int main()
 	printf("\nTest Case Sum Array Element Length:	");
 	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
 
+	printf("\nAbout to enter twoSum() function...\n\n");
 	fflush(stdout);
 
 	intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
@@ -225,6 +270,7 @@ int main()
 	printf("\nTest Case Sum Array Element Length:	");
 	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
 
+	printf("\nAbout to enter twoSum() function...\n\n");
 	fflush(stdout);
 
 	intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
