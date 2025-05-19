@@ -75,13 +75,17 @@ using System;
 
 public class Solution
 {
-	public int[] TwoSum(int[] nums, int target) {
+	public int[] TwoSum(int[] nums, int target)
+	{
 		// Code provided in Leetcode Editor: Ends Here
-		
+
 		// Submission to Leetcode starts here
+		int[] result = [0];
+
+		return result;
 
 		// Submission to Leetcode ends here
-		
+
 		// Code provided in Leetcode Editor: Begins Here
 	}
 }
