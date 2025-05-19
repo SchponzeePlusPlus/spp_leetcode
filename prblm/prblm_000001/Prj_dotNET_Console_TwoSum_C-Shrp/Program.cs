@@ -163,6 +163,66 @@ namespace TwoSumApp
 			Console.WriteLine("----------------------------------------\n\n\n");
 			//fflush(stdout);
 
+			int[] intArr_testCaseNums;
+			int[] intArr_testCaseNumsTargetSumElems;
+			int int_testCaseTargetSum = 0;
+
+			// Test Case 1
+			//intArr_testCaseNums[0] = 2;
+			//intArr_testCaseNums[1] = 7;
+			//intArr_testCaseNums[2] = 11;
+			//intArr_testCaseNums[3] = 15;
+			intArr_testCaseNums = {2, 7, 11, 15};
+			intArr_testCaseNumsArrLen = intArr_testCaseNums.Length;
+			int_testCaseTargetSum = 9;
+			intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
+			*intArr_testCaseNumsTargetSumElemsArrLen = 0;
+
+			fflush(stdout);
+			printf("\nTest Case 1\n\n");
+			printf("\nInput Data\n\n");
+			printf("Test Case Input Array:	");
+			printf("[ ");
+			for (int i = 0; i < (intArr_testCaseNumsArrLen - 1); i++)
+			{
+				printf("%d", intArr_testCaseNums[i]);
+				printf(", ");
+			}
+			printf("%d", intArr_testCaseNums[(intArr_testCaseNumsArrLen - 1)]);
+			printf(" ]\n");
+
+			printf("\nTest Case Number Array Element Length:	");
+			printf("%d\n", intArr_testCaseNumsArrLen);
+
+			printf("\nTest Case Target Sum:	");
+			printf("%d\n", int_testCaseTargetSum);
+
+			printf("\nAbout to enter twoSum() function...\n\n");
+			fflush(stdout);
+
+			intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
+
+			fflush(stdout);
+			printf("\nOutput Data\n\n");
+			printf("\nTest Case Sum Array Element Length:	");
+			printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
+			printf("Test Case Output Array:	");
+			printf("[ ");
+			for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
+			{
+				printf("%d", intArr_testCaseNumsTargetSumElems[i]);
+				printf(", ");
+			}
+			printf("%d", intArr_testCaseNumsTargetSumElems[(*intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
+			printf(" ]\n\n");
+			fflush(stdout);
+
+			// Free the memory after completing
+			// operations
+			free(intArr_testCaseNums);
+			free(intArr_testCaseNumsTargetSumElemsArrLen);
+			free(intArr_testCaseNumsTargetSumElems);
+
 			// statement 
 			// printing Hello World! 
 			Console.WriteLine("Hello World!");
