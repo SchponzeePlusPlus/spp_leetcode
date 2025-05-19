@@ -47,6 +47,7 @@ So, if we fix one of the numbers, say x, we have to scan the entire array to fin
 Hint 3
 The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?
  *
+ * Solution Attempt: 01
  */
 
 #include <stdio.h>
@@ -79,7 +80,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	 */
 	// I use target because it's an already existing integer variable that I can
 	//   use to measure the memory allocation I need
-	int *result = (int *)malloc(int(sizeof(target) * returnSize));
+	int *result = (int *)malloc(((int) sizeof(target)) * ((int) returnSize));
 
 	bool bo_chkTwoSumArrComplete = false;
 
@@ -119,14 +120,45 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 
 int main()
 {
-	int* nums.....up to this part;
+	int* intArr_testCaseNums = NULL;
+	int intArr_testCaseNumsArrLen = 0;
+	int* intArr_testCaseNumsTargetSumElems = NULL;
+	int int_testCaseTargetSum = 0;
+	int* intArr_testCaseNumsTargetSumElemsArrLen = NULL;
+	
 	char char_chkProgUsrTerminate = 'y';
 
-	scanf("%d", &t);
+	intArr_testCaseNumsArrLen = 4;
+	intArr_testCaseNums = (int *)malloc(((int) sizeof(intArr_testCaseNumsArrLen)) * ((int) intArr_testCaseNumsArrLen));
+	intArr_testCaseNums[] = [2, 7, 11, 15];
+	int_testCaseTargetSum = 9;
+	intArr_testCaseNumsTargetSumElemsArrLen = 2;
 
-	twoSum()
+	intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
+
+	printf("Test Case 1 Input Data:","\n");
+	printf("Test Case Input Array:","\n");
+	printf("[ ");
+	for (int i = 0; i < (intArr_testCaseNumsArrLen - 1); i++)
+	{
+		printf("%d", intArr_testCaseNums[i]);
+		printf(", ");
+	}
+	printf("%d", intArr_testCaseNums[(intArr_testCaseNumsArrLen - 1)]);
+	printf(" ]","\n");
+
+	printf("Test Case 1 Output Data:","\n");
+	printf("Test Case Output Array:","\n");
+	printf("[ ");
+	for (int i = 0; i < (intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
+	{
+		printf("%d", intArr_testCaseNumsTargetSumElems[i]);
+		printf(", ");
+	}
+	printf("%d", intArr_testCaseNumsTargetSumElems[(intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
+	printf(" ]","\n");
 	
-	while((chkProgUsrTerminate == 'y'))
+	/* while((char_chkProgUsrTerminate == 'y'))
 	{   
 		int a;
 		
@@ -138,7 +170,11 @@ int main()
 
 		printf("Try again? (y/n)", "\n");
 		scanf(char_chkProgUsrTerminate);
-	}
+	} */
+
+	// Free the memory after completing
+    // operations
+    free(intArr_testCaseNumsTargetSumElems);
 
 	return 0;
 }
