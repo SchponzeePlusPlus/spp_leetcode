@@ -138,11 +138,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 
 int main()
 {
-	fflush(stdout);
-	printf("\n\n----------------------------------------\n");
-	printf("Program Initialised.\n");
-	printf("----------------------------------------\n\n\n");
-	fflush(stdout);
+	
 
 	int* intArr_testCaseNums;
 	int intArr_testCaseNumsArrLen = 0;
@@ -399,12 +395,7 @@ int main()
 	//free(intArr_testCaseNumsTargetSumElemsArrLen);
 	//free(intArr_testCaseNumsTargetSumElems);
 
-	fflush(stdout);
-	printf("\n\n----------------------------------------\n");
-	printf("Program Complete.\n");
-	printf("Terminating Program...\n");
-	printf("----------------------------------------\n\n\n");
-	fflush(stdout);
+	
 
 	return 0;
 }

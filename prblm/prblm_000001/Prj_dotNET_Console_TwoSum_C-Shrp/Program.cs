@@ -65,12 +65,61 @@ The second train of thought is, without changing the array, can we use additiona
  * Solution Attempt: 01
  */
 
+// Code Not Being Submitted to Leetcode starts here
+
+using System;
+
+// Code Not Being Submitted to Leetcode ends here
+
 // Code provided in Leetcode Editor: Begins Here
 
-public class Solution {
-    public int[] TwoSum(int[] nums, int target) {
-        
-    }
+public class Solution
+{
+	public int[] TwoSum(int[] nums, int target) {
+		// Code provided in Leetcode Editor: Ends Here
+		
+		// Submission to Leetcode starts here
+
+		// Submission to Leetcode ends here
+		
+		// Code provided in Leetcode Editor: Begins Here
+	}
 }
 
 // Code provided in Leetcode Editor: Ends Here
+
+// Code Not Being Submitted to Leetcode starts here
+
+// namespace declaration
+namespace TwoSumApp
+{
+	// Class declaration
+	class Classy
+	{
+		// Main Method 
+		static void Main(string[] args)
+		{
+			//fflush(stdout);
+			Console.WriteLine("\n\n----------------------------------------\n");
+			Console.WriteLine("Program Initialised.\n");
+			Console.WriteLine("----------------------------------------\n\n\n");
+			//fflush(stdout);
+
+			// statement 
+			// printing Hello World! 
+			Console.WriteLine("Hello World!");
+
+			// To prevent the screen from 
+			// running and closing quickly 
+			Console.ReadKey();
+
+			//fflush(stdout);
+			Console.WriteLine("\n\n----------------------------------------\n");
+			Console.WriteLine("Program Complete.\n");
+			Console.WriteLine("Terminating Program...\n");
+			Console.WriteLine("----------------------------------------\n\n\n");
+			//fflush(stdout);
+		}
+	}
+}
+// Code Not Being Submitted to Leetcode ends here

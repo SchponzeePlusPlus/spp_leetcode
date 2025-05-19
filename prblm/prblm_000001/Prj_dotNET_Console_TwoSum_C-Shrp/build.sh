@@ -1,7 +1,7 @@
 # build.sh
 
 # Prequisites:
-# 	- gcc
+# 	- .NET SDK
 
 #!/bin/bash
 
@@ -21,7 +21,7 @@ printf "\n"
 
 ls
 
-gcc main.c -o ./build/Program_Main
+dotnet build
 
 printf "\n"
 printf "End of shell script\n"

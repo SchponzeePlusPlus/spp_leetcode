@@ -22,7 +22,7 @@ printf "\n"
 printf "Running Target Program:\n"
 printf "\n"
 
-./build/Program_Main
+dotnet run
 
 printf "\n"
 printf "Finished Running Target Program:\n"
