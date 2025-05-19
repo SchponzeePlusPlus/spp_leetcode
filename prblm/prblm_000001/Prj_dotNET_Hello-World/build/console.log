@@ -1,0 +1,35 @@
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/Prj_dotNET_Hello-World$ ./build.sh
+
+This is a build shell script
+
+
+Files in Current Dirtectory:.
+
+bin  build  build.sh  obj  Prj_dotNET_Hello-World.csproj  Program.cs  run.sh
+Restore complete (0.6s)
+  Prj_dotNET_Hello-World succeeded (0.3s) → bin/Debug/net9.0/Prj_dotNET_Hello-World.dll
+
+Build succeeded in 1.3s
+
+End of shell script
+
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/Prj_dotNET_Hello-World$ ./run.sh
+
+This is a shell script to run the target program
+
+
+Files in Current Dirtectory:.
+
+
+bin  build  build.sh  obj  Prj_dotNET_Hello-World.csproj  Program.cs  run.sh
+
+Running Target Program:
+
+Hello World!
+x
+Finished Running Target Program:
+
+
+End of shell script
+
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/Prj_dotNET_Hello-World$ 

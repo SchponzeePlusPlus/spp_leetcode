@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prblm", "prblm", "{ED8ECF7C-980D-B84C-50A5-CE0A5CA63F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prblm_000001", "prblm_000001", "{CEFFD504-964E-7C03-D3F9-A9DD721B8BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prj_dotNET_Hello-World", "prblm\prblm_000001\Prj_dotNET_Hello-World\Prj_dotNET_Hello-World.csproj", "{674C62CB-B502-D816-783A-869B1CBBCFF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{674C62CB-B502-D816-783A-869B1CBBCFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674C62CB-B502-D816-783A-869B1CBBCFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674C62CB-B502-D816-783A-869B1CBBCFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674C62CB-B502-D816-783A-869B1CBBCFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEFFD504-964E-7C03-D3F9-A9DD721B8BFE} = {ED8ECF7C-980D-B84C-50A5-CE0A5CA63F6B}
+		{674C62CB-B502-D816-783A-869B1CBBCFF8} = {CEFFD504-964E-7C03-D3F9-A9DD721B8BFE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32621A85-232D-45EA-A080-21545BC9161E}
+	EndGlobalSection
+EndGlobal
