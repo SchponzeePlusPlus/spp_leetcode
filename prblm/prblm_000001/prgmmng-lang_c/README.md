@@ -1,5 +1,7 @@
 # README.md
 
+Result in Leetcode: N/A
+
 ## Links used:
 
 https://www.google.com/search?q=malloc&oq=malloc&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgkIAhAuGAoYgAQyCQgDEC4YChiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIJCAgQABgKGIAEMgcICRAAGIAE0gEIMTMxMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8

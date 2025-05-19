@@ -83,6 +83,60 @@ Output Data
 Test Case Output Array: [ 1, 2 ]
 
 
+Test Case 3
+
+
+Input Data
+
+Test Case Input Array:  [ 3, 3 ]
+
+Test Case Number Array Element Length:  2
+
+Test Case Target Sum:   6
+
+Test Case Sum Array Element Length:     2
+
+About to enter twoSum() function...
+
+
+Entered twoSum() function.
+
+
+twoSum() function almost complete, returning result...
+
+
+Output Data
+
+Test Case Output Array: [ 0, 1 ]
+
+
+Test Case 4
+
+
+Input Data
+
+Test Case Input Array:  [ 4, 3, 2, 1 ]
+
+Test Case Number Array Element Length:  4
+
+Test Case Target Sum:   10
+
+Test Case Sum Array Element Length:     2
+
+About to enter twoSum() function...
+
+
+Entered twoSum() function.
+
+
+twoSum() function almost complete, returning result...
+
+
+Output Data
+
+Test Case Output Array: [ -1, -2 ]
+
+
 
 ----------------------------------------
 Program Complete.
