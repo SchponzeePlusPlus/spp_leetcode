@@ -1,0 +1,136 @@
+https://leetcode.com/problems/two-sum/submissions/1637960274
+
+Accepted
+63 / 63 testcases passed
+SponzaPlusPlus
+SponzaPlusPlus
+submitted at May 19, 2025 16:28
+
+Editorial
+
+Solution
+Runtime
+255
+ms
+Beats
+5.02%
+Analyze Complexity
+Memory
+8.57
+MB
+Beats
+92.93%
+Analyze Complexity
+Code
+C
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    // Submission to Leetcode starts here
+
+	printf("\nEntered twoSum() function.\n\n");
+
+	printf("\ntwoSum() Parameter Arguments Passed\n\n");
+	printf("nums Array:	");
+	printf("[ ");
+	for (int i = 0; i < (numsSize - 1); i++)
+	{
+		printf("%d", nums[i]);
+		printf(", ");
+	}
+	printf("%d", nums[(numsSize - 1)]);
+	printf(" ]\n");
+
+	printf("\nnums Array Element Length:	");
+	printf("%d\n", numsSize);
+
+	printf("\nTarget Sum:	");
+	printf("%d\n", target);
+
+	printf("\nReturn Sum Array Element Length:	");
+	printf("%d\n", *returnSize);
+
+	fflush(stdout);
+
+	/*
+	 * malloc()
+	 * https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
+	 * The malloc() (stands for memory allocation) function is used to allocate a single
+	 * block of * contiguous memory on the heap at runtime. The memory allocated by malloc()
+	 * is uninitialized, * meaning it contains garbage values.
+	 * 
+	 * Syntax:
+	 * malloc(size);
+	 * where size is the number of bytes to allocate.
+	 * This function returns a void pointer to the allocated memory that needs to be
+	 * converted to the pointer of required type to be usable. If allocation fails,
+	 * it returns NULL pointer.
+	 */
+	// I use target because it's an already existing integer variable that I can
+	//   use to measure the memory allocation I need
+	int *result;
+	
+	*returnSize = 2;
+	result = (int *)malloc(((int) sizeof(int)) * ((int) *returnSize));
+
+	/* printf("\nResult memory allocated, continuing with function calculation...\n\n");
+	fflush(stdout); */
+
+	bool bo_chkTwoSumArrComplete = false;
+
+	int i = 0;
+	int j = 1;
+
+	/* printf("\nOther local variables declared, continuing with function calculation...\n\n");
+	fflush(stdout); */
+
+	while ((i < (numsSize - 1)) && (!bo_chkTwoSumArrComplete))
+	{
+		while ((j < numsSize) && (!bo_chkTwoSumArrComplete))
+		{
+			/* printf("i : %d\n", i);
+			printf("j : %d\n", j);
+			fflush(stdout); */
+			bo_chkTwoSumArrComplete = (((nums[i] + nums[j]) == target) && (i != j));
+
+			if (!bo_chkTwoSumArrComplete)
+			{
+				j++;
+			}
+
+			//delay(1000);
+		}
+		if (!bo_chkTwoSumArrComplete)
+		{
+			i++;
+			j = 1;
+			//j++;
+		}
+		
+	}
+
+	if (bo_chkTwoSumArrComplete)
+	{
+		result[0] = i;
+		result[1] = j;
+	}
+	else
+	{
+		// Used {result = NULL;} previously
+		result[0] = -1;
+		result[1] = -2;
+	}
+
+	printf("\ntwoSum() function almost complete, returning result...\n\n");
+	fflush(stdout);
+
+	return result;
+	free(result);
+	// Submission to Leetcode ends here
+}
+View less
+More challenges
+15. 3Sum
+18. 4Sum
+167. Two Sum II - Input Array Is Sorted

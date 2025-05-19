@@ -1,8 +1,13 @@
-Runtime Error
-Line 89: Char 13: runtime error: store to address 0x502000000030 with insufficient space for an object of type 'int' [solution.c]
-0x502000000030: note: pointer points here
- 00 00 00 00  be 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00
-              ^
+Accepted
+Runtime: 0 ms
+Case 1
+Case 2
+Case 3
+Input
+nums =
+[2,7,11,15]
+target =
+9
 Stdout
 
 Entered twoSum() function.
@@ -17,10 +22,77 @@ nums Array Element Length:	4
 Target Sum:	9
 
 Return Sum Array Element Length:	0
+
+twoSum() function almost complete, returning result...
+
 View less
-Last Executed Input
-Open Testcase
+Output
+[0,1]
+Expected
+[0,1]
+
+Accepted
+Runtime: 0 ms
+Case 1
+Case 2
+Case 3
+Input
 nums =
-[2,7,11,15]
+[3,2,4]
 target =
-9
+6
+Stdout
+
+Entered twoSum() function.
+
+
+twoSum() Parameter Arguments Passed
+
+nums Array:	[ 3, 2, 4 ]
+
+nums Array Element Length:	3
+
+Target Sum:	6
+
+Return Sum Array Element Length:	2
+
+twoSum() function almost complete, returning result...
+
+View less
+Output
+[1,2]
+Expected
+[1,2]
+
+Accepted
+Runtime: 0 ms
+Case 1
+Case 2
+Case 3
+Input
+nums =
+[3,3]
+target =
+6
+Stdout
+
+Entered twoSum() function.
+
+
+twoSum() Parameter Arguments Passed
+
+nums Array:	[ 3, 3 ]
+
+nums Array Element Length:	2
+
+Target Sum:	6
+
+Return Sum Array Element Length:	2
+
+twoSum() function almost complete, returning result...
+
+View less
+Output
+[0,1]
+Expected
+[0,1]

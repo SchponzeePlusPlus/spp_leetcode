@@ -124,6 +124,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	//   use to measure the memory allocation I need
 	int *result;
 	
+	*returnSize = 2;
 	result = (int *)malloc(((int) sizeof(int)) * ((int) *returnSize));
 
 	/* printf("\nResult memory allocated, continuing with function calculation...\n\n");
@@ -201,6 +202,7 @@ int main()
 	
 	char char_chkProgUsrTerminate = 'y';
 
+	// Test Case 1
 	intArr_testCaseNumsArrLen = 4;
 	intArr_testCaseNums = (int *)malloc(((int) sizeof(int)) * ((int) intArr_testCaseNumsArrLen));
 	intArr_testCaseNums[0] = 2;
@@ -210,7 +212,7 @@ int main()
 	//intArr_testCaseNums = [2, 7, 11, 15];
 	int_testCaseTargetSum = 9;
 	intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
-	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
+	*intArr_testCaseNumsTargetSumElemsArrLen = 0;
 
 	fflush(stdout);
 	printf("\nTest Case 1\n\n");
@@ -231,9 +233,6 @@ int main()
 	printf("\nTest Case Target Sum:	");
 	printf("%d\n", int_testCaseTargetSum);
 
-	printf("\nTest Case Sum Array Element Length:	");
-	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
-
 	printf("\nAbout to enter twoSum() function...\n\n");
 	fflush(stdout);
 
@@ -241,6 +240,8 @@ int main()
 
 	fflush(stdout);
 	printf("\nOutput Data\n\n");
+	printf("\nTest Case Sum Array Element Length:	");
+	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
 	printf("Test Case Output Array:	");
 	printf("[ ");
 	for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
@@ -267,7 +268,7 @@ int main()
 	//intArr_testCaseNums = [2, 7, 11, 15];
 	int_testCaseTargetSum = 6;
 	intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
-	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
+	*intArr_testCaseNumsTargetSumElemsArrLen = 0;
 
 	fflush(stdout);
 	printf("\nTest Case 2\n\n");
@@ -288,9 +289,6 @@ int main()
 	printf("\nTest Case Target Sum:	");
 	printf("%d\n", int_testCaseTargetSum);
 
-	printf("\nTest Case Sum Array Element Length:	");
-	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
-
 	printf("\nAbout to enter twoSum() function...\n\n");
 	fflush(stdout);
 
@@ -298,6 +296,8 @@ int main()
 
 	fflush(stdout);
 	printf("\nOutput Data\n\n");
+	printf("\nTest Case Sum Array Element Length:	");
+	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
 	printf("Test Case Output Array:	");
 	printf("[ ");
 	for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
@@ -323,7 +323,7 @@ int main()
 	//intArr_testCaseNums = [2, 7, 11, 15];
 	int_testCaseTargetSum = 6;
 	intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
-	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
+	*intArr_testCaseNumsTargetSumElemsArrLen = 0;
 
 	fflush(stdout);
 	printf("\nTest Case 3\n\n");
@@ -344,9 +344,6 @@ int main()
 	printf("\nTest Case Target Sum:	");
 	printf("%d\n", int_testCaseTargetSum);
 
-	printf("\nTest Case Sum Array Element Length:	");
-	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
-
 	printf("\nAbout to enter twoSum() function...\n\n");
 	fflush(stdout);
 
@@ -354,6 +351,8 @@ int main()
 
 	fflush(stdout);
 	printf("\nOutput Data\n\n");
+	printf("\nTest Case Sum Array Element Length:	");
+	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
 	printf("Test Case Output Array:	");
 	printf("[ ");
 	for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
@@ -381,7 +380,7 @@ int main()
 	//intArr_testCaseNums = [2, 7, 11, 15];
 	int_testCaseTargetSum = 10;
 	intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
-	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
+	*intArr_testCaseNumsTargetSumElemsArrLen = 0;
 
 	fflush(stdout);
 	printf("\nTest Case 4\n\n");
@@ -402,9 +401,6 @@ int main()
 	printf("\nTest Case Target Sum:	");
 	printf("%d\n", int_testCaseTargetSum);
 
-	printf("\nTest Case Sum Array Element Length:	");
-	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
-
 	printf("\nAbout to enter twoSum() function...\n\n");
 	fflush(stdout);
 
@@ -412,6 +408,8 @@ int main()
 
 	fflush(stdout);
 	printf("\nOutput Data\n\n");
+	printf("\nTest Case Sum Array Element Length:	");
+	printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
 	printf("Test Case Output Array:	");
 	printf("[ ");
 	for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)

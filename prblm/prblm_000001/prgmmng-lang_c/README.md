@@ -1,6 +1,8 @@
 # README.md
 
-Result in Leetcode: N/A
+Results in Leetcode:
+- All 3 x Test Cases Accepted when Run
+- Submission accepted
 
 ## Links used:
 

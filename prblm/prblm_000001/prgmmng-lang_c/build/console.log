@@ -40,8 +40,6 @@ Test Case Number Array Element Length:  4
 
 Test Case Target Sum:   9
 
-Test Case Sum Array Element Length:     2
-
 About to enter twoSum() function...
 
 
@@ -56,13 +54,15 @@ nums Array Element Length:      4
 
 Target Sum:     9
 
-Return Sum Array Element Length:        2
+Return Sum Array Element Length:        0
 
 twoSum() function almost complete, returning result...
 
 
 Output Data
 
+
+Test Case Sum Array Element Length:     2
 Test Case Output Array: [ 0, 1 ]
 
 
@@ -76,8 +76,6 @@ Test Case Input Array:  [ 3, 2, 4 ]
 Test Case Number Array Element Length:  3
 
 Test Case Target Sum:   6
-
-Test Case Sum Array Element Length:     2
 
 About to enter twoSum() function...
 
@@ -93,13 +91,15 @@ nums Array Element Length:      3
 
 Target Sum:     6
 
-Return Sum Array Element Length:        2
+Return Sum Array Element Length:        0
 
 twoSum() function almost complete, returning result...
 
 
 Output Data
 
+
+Test Case Sum Array Element Length:     2
 Test Case Output Array: [ 1, 2 ]
 
 
@@ -113,8 +113,6 @@ Test Case Input Array:  [ 3, 3 ]
 Test Case Number Array Element Length:  2
 
 Test Case Target Sum:   6
-
-Test Case Sum Array Element Length:     2
 
 About to enter twoSum() function...
 
@@ -130,13 +128,15 @@ nums Array Element Length:      2
 
 Target Sum:     6
 
-Return Sum Array Element Length:        2
+Return Sum Array Element Length:        0
 
 twoSum() function almost complete, returning result...
 
 
 Output Data
 
+
+Test Case Sum Array Element Length:     2
 Test Case Output Array: [ 0, 1 ]
 
 
@@ -150,8 +150,6 @@ Test Case Input Array:  [ 4, 3, 2, 1 ]
 Test Case Number Array Element Length:  4
 
 Test Case Target Sum:   10
-
-Test Case Sum Array Element Length:     2
 
 About to enter twoSum() function...
 
@@ -167,13 +165,15 @@ nums Array Element Length:      4
 
 Target Sum:     10
 
-Return Sum Array Element Length:        2
+Return Sum Array Element Length:        0
 
 twoSum() function almost complete, returning result...
 
 
 Output Data
 
+
+Test Case Sum Array Element Length:     2
 Test Case Output Array: [ -1, -2 ]
 
 
