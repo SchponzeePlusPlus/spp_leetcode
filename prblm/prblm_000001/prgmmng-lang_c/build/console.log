@@ -48,6 +48,16 @@ About to enter twoSum() function...
 Entered twoSum() function.
 
 
+twoSum() Parameter Arguments Passed
+
+nums Array:     [ 2, 7, 11, 15 ]
+
+nums Array Element Length:      4
+
+Target Sum:     9
+
+Return Sum Array Element Length:        2
+
 twoSum() function almost complete, returning result...
 
 
@@ -74,6 +84,16 @@ About to enter twoSum() function...
 
 Entered twoSum() function.
 
+
+twoSum() Parameter Arguments Passed
+
+nums Array:     [ 3, 2, 4 ]
+
+nums Array Element Length:      3
+
+Target Sum:     6
+
+Return Sum Array Element Length:        2
 
 twoSum() function almost complete, returning result...
 
@@ -102,6 +122,16 @@ About to enter twoSum() function...
 Entered twoSum() function.
 
 
+twoSum() Parameter Arguments Passed
+
+nums Array:     [ 3, 3 ]
+
+nums Array Element Length:      2
+
+Target Sum:     6
+
+Return Sum Array Element Length:        2
+
 twoSum() function almost complete, returning result...
 
 
@@ -128,6 +158,16 @@ About to enter twoSum() function...
 
 Entered twoSum() function.
 
+
+twoSum() Parameter Arguments Passed
+
+nums Array:     [ 4, 3, 2, 1 ]
+
+nums Array Element Length:      4
+
+Target Sum:     10
+
+Return Sum Array Element Length:        2
 
 twoSum() function almost complete, returning result...
 

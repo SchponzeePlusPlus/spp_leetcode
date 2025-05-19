@@ -1,5 +1,5 @@
 Runtime Error
-Line 68: Char 13: runtime error: store to address 0x502000000030 with insufficient space for an object of type 'int' [solution.c]
+Line 89: Char 13: runtime error: store to address 0x502000000030 with insufficient space for an object of type 'int' [solution.c]
 0x502000000030: note: pointer points here
  00 00 00 00  be 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00
               ^
@@ -7,6 +7,17 @@ Stdout
 
 Entered twoSum() function.
 
+
+twoSum() Parameter Arguments Passed
+
+nums Array:	[ 2, 7, 11, 15 ]
+
+nums Array Element Length:	4
+
+Target Sum:	9
+
+Return Sum Array Element Length:	0
+View less
 Last Executed Input
 Open Testcase
 nums =

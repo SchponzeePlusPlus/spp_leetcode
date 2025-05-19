@@ -83,6 +83,27 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	// Submission to Leetcode starts here
 
 	printf("\nEntered twoSum() function.\n\n");
+
+	printf("\ntwoSum() Parameter Arguments Passed\n\n");
+	printf("nums Array:	");
+	printf("[ ");
+	for (int i = 0; i < (numsSize - 1); i++)
+	{
+		printf("%d", nums[i]);
+		printf(", ");
+	}
+	printf("%d", nums[(numsSize - 1)]);
+	printf(" ]\n");
+
+	printf("\nnums Array Element Length:	");
+	printf("%d\n", numsSize);
+
+	printf("\nTarget Sum:	");
+	printf("%d\n", target);
+
+	printf("\nReturn Sum Array Element Length:	");
+	printf("%d\n", *returnSize);
+
 	fflush(stdout);
 
 	/*
