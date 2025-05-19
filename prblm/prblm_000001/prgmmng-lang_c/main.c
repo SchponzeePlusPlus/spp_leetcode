@@ -50,6 +50,8 @@ The second train of thought is, without changing the array, can we use additiona
  * Solution Attempt: 01
  */
 
+// The boolean (bool) data type is not built-in to C, therefore the library below is required
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -80,7 +82,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 	 */
 	// I use target because it's an already existing integer variable that I can
 	//   use to measure the memory allocation I need
-	int *result = (int *)malloc(((int) sizeof(target)) * ((int) returnSize));
+	int *result = (int *)malloc(((int) sizeof(int)) * ((int) *returnSize));
 
 	bool bo_chkTwoSumArrComplete = false;
 
@@ -124,15 +126,18 @@ int main()
 	int intArr_testCaseNumsArrLen = 0;
 	int* intArr_testCaseNumsTargetSumElems = NULL;
 	int int_testCaseTargetSum = 0;
-	int* intArr_testCaseNumsTargetSumElemsArrLen = NULL;
+	int* intArr_testCaseNumsTargetSumElemsArrLen = 0;
 	
 	char char_chkProgUsrTerminate = 'y';
 
 	intArr_testCaseNumsArrLen = 4;
-	intArr_testCaseNums = (int *)malloc(((int) sizeof(intArr_testCaseNumsArrLen)) * ((int) intArr_testCaseNumsArrLen));
-	intArr_testCaseNums[] = [2, 7, 11, 15];
+	intArr_testCaseNums = (int *)malloc(((int) sizeof(int)) * ((int) intArr_testCaseNumsArrLen));
+	intArr_testCaseNums[0] = 2;
+	intArr_testCaseNums[1] = 7;
+	intArr_testCaseNums[2] = 11;
+	intArr_testCaseNums[3] = 15;
 	int_testCaseTargetSum = 9;
-	intArr_testCaseNumsTargetSumElemsArrLen = 2;
+	*intArr_testCaseNumsTargetSumElemsArrLen = 2;
 
 	intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
 
@@ -150,12 +155,12 @@ int main()
 	printf("Test Case 1 Output Data:","\n");
 	printf("Test Case Output Array:","\n");
 	printf("[ ");
-	for (int i = 0; i < (intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
+	for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
 	{
 		printf("%d", intArr_testCaseNumsTargetSumElems[i]);
 		printf(", ");
 	}
-	printf("%d", intArr_testCaseNumsTargetSumElems[(intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
+	printf("%d", intArr_testCaseNumsTargetSumElems[(*intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
 	printf(" ]","\n");
 	
 	/* while((char_chkProgUsrTerminate == 'y'))
