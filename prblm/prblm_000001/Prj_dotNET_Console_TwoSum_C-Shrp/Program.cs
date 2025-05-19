@@ -80,9 +80,63 @@ public class Solution
 		// Code provided in Leetcode Editor: Ends Here
 
 		// Submission to Leetcode starts here
-		int[] result = [0];
+		int[] result = [-1, -2];
+
+		// https://stackoverflow.com/questions/2843987/array-size-length-in-c-sharp
+		int int_numsArrLength = nums.Length;
+
+		/* printf("\nResult memory allocated, continuing with function calculation...\n\n");
+		fflush(stdout); */
+
+		bool bo_chkTwoSumArrComplete = false;
+
+		int i = 0;
+		int j = 1;
+
+		/* printf("\nOther local variables declared, continuing with function calculation...\n\n");
+		fflush(stdout); */
+
+		while ((i < (int_numsArrLength - 1)) && (!bo_chkTwoSumArrComplete))
+		{
+			while ((j < int_numsArrLength) && (!bo_chkTwoSumArrComplete))
+			{
+				/* printf("i : %d\n", i);
+				printf("j : %d\n", j);
+				fflush(stdout); */
+				bo_chkTwoSumArrComplete = (((nums[i] + nums[j]) == target) && (i != j));
+
+				if (!bo_chkTwoSumArrComplete)
+				{
+					j++;
+				}
+
+				//delay(1000);
+			}
+			if (!bo_chkTwoSumArrComplete)
+			{
+				i++;
+				j = 1;
+				//j++;
+			}
+
+		}
+
+		if (bo_chkTwoSumArrComplete)
+		{
+			result[0] = i;
+			result[1] = j;
+		}
+		else
+		{
+			// Used {result = NULL;} previously
+			result[0] = -1;
+			result[1] = -2;
+		}
+
+		//printf("\ntwoSum() function almost complete, returning result...\n\n");
 
 		return result;
+		//free(result);
 
 		// Submission to Leetcode ends here
 
