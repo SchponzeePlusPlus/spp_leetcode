@@ -75,8 +75,7 @@ using System;
 
 public class Solution
 {
-	public int[] TwoSum(int[] nums, int target)
-	{
+	public int[] TwoSum(int[] nums, int target) {
 		// Code provided in Leetcode Editor: Ends Here
 
 		// Submission to Leetcode starts here
@@ -85,7 +84,7 @@ public class Solution
 		// https://stackoverflow.com/questions/2843987/array-size-length-in-c-sharp
 		int int_numsArrLength = nums.Length;
 
-		/* printf("\nResult memory allocated, continuing with function calculation...\n\n");
+		/* Console.WriteLine("\nResult memory allocated, continuing with function calculation...\n\n");
 		fflush(stdout); */
 
 		bool bo_chkTwoSumArrComplete = false;
@@ -93,15 +92,15 @@ public class Solution
 		int i = 0;
 		int j = 1;
 
-		/* printf("\nOther local variables declared, continuing with function calculation...\n\n");
+		/* Console.WriteLine("\nOther local variables declared, continuing with function calculation...\n\n");
 		fflush(stdout); */
 
 		while ((i < (int_numsArrLength - 1)) && (!bo_chkTwoSumArrComplete))
 		{
 			while ((j < int_numsArrLength) && (!bo_chkTwoSumArrComplete))
 			{
-				/* printf("i : %d\n", i);
-				printf("j : %d\n", j);
+				/* Console.WriteLine("i : %d\n", i);
+				Console.WriteLine("j : %d\n", j);
 				fflush(stdout); */
 				bo_chkTwoSumArrComplete = (((nums[i] + nums[j]) == target) && (i != j));
 
@@ -133,7 +132,7 @@ public class Solution
 			result[1] = -2;
 		}
 
-		//printf("\ntwoSum() function almost complete, returning result...\n\n");
+		//Console.WriteLine("\ntwoSum() function almost complete, returning result...\n\n");
 
 		return result;
 		//free(result);
@@ -164,64 +163,71 @@ namespace TwoSumApp
 			//fflush(stdout);
 
 			int[] intArr_testCaseNums;
+			int intArr_testCaseNumsArrLen = 0;
 			int[] intArr_testCaseNumsTargetSumElems;
 			int int_testCaseTargetSum = 0;
+			int intArr_testCaseNumsTargetSumElemsArrLen = 0;
+
+			Solution clsSolutn_tstCase01;
 
 			// Test Case 1
 			//intArr_testCaseNums[0] = 2;
 			//intArr_testCaseNums[1] = 7;
 			//intArr_testCaseNums[2] = 11;
 			//intArr_testCaseNums[3] = 15;
-			intArr_testCaseNums = {2, 7, 11, 15};
-			intArr_testCaseNumsArrLen = intArr_testCaseNums.Length;
+			intArr_testCaseNums = [2, 7, 11, 15];
 			int_testCaseTargetSum = 9;
-			intArr_testCaseNumsTargetSumElemsArrLen = (int *)malloc((int) sizeof(int));
-			*intArr_testCaseNumsTargetSumElemsArrLen = 0;
 
-			fflush(stdout);
-			printf("\nTest Case 1\n\n");
-			printf("\nInput Data\n\n");
-			printf("Test Case Input Array:	");
-			printf("[ ");
+			intArr_testCaseNumsArrLen = intArr_testCaseNums.Length;
+
+			//fflush(stdout);
+			Console.WriteLine("\nTest Case 1\n\n");
+			Console.WriteLine("\nInput Data\n\n");
+			Console.WriteLine("Test Case Input Array:	");
+			Console.WriteLine("[ ");
 			for (int i = 0; i < (intArr_testCaseNumsArrLen - 1); i++)
 			{
-				printf("%d", intArr_testCaseNums[i]);
-				printf(", ");
+				Console.WriteLine("%d", intArr_testCaseNums[i]);
+				Console.WriteLine(", ");
 			}
-			printf("%d", intArr_testCaseNums[(intArr_testCaseNumsArrLen - 1)]);
-			printf(" ]\n");
+			Console.WriteLine("%d", intArr_testCaseNums[(intArr_testCaseNumsArrLen - 1)]);
+			Console.WriteLine(" ]\n");
 
-			printf("\nTest Case Number Array Element Length:	");
-			printf("%d\n", intArr_testCaseNumsArrLen);
+			Console.WriteLine("\nTest Case Number Array Element Length:	");
+			Console.WriteLine("%d\n", intArr_testCaseNumsArrLen);
 
-			printf("\nTest Case Target Sum:	");
-			printf("%d\n", int_testCaseTargetSum);
+			Console.WriteLine("\nTest Case Target Sum:	");
+			Console.WriteLine("%d\n", int_testCaseTargetSum);
 
-			printf("\nAbout to enter twoSum() function...\n\n");
-			fflush(stdout);
+			Console.WriteLine("\nAbout to enter twoSum() function...\n\n");
+			//fflush(stdout);
 
-			intArr_testCaseNumsTargetSumElems = twoSum(intArr_testCaseNums, intArr_testCaseNumsArrLen, int_testCaseTargetSum, intArr_testCaseNumsTargetSumElemsArrLen);
+			intArr_testCaseNumsTargetSumElems = clsSolutn_tstCase01.TwoSum(intArr_testCaseNums, int_testCaseTargetSum);
 
-			fflush(stdout);
-			printf("\nOutput Data\n\n");
-			printf("\nTest Case Sum Array Element Length:	");
-			printf("%d\n", *intArr_testCaseNumsTargetSumElemsArrLen);
-			printf("Test Case Output Array:	");
-			printf("[ ");
-			for (int i = 0; i < (*intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
+			//intArr_testCaseNumsTargetSumElems = Solution.TwoSum(intArr_testCaseNums, int_testCaseTargetSum);
+
+			intArr_testCaseNumsTargetSumElemsArrLen = intArr_testCaseNumsTargetSumElems.Length;
+
+			//fflush(stdout);
+			Console.WriteLine("\nOutput Data\n\n");
+			Console.WriteLine("\nTest Case Sum Array Element Length:	");
+			Console.WriteLine("%d\n", intArr_testCaseNumsTargetSumElemsArrLen);
+			Console.WriteLine("Test Case Output Array:	");
+			Console.WriteLine("[ ");
+			for (int i = 0; i < (intArr_testCaseNumsTargetSumElemsArrLen - 1); i++)
 			{
-				printf("%d", intArr_testCaseNumsTargetSumElems[i]);
-				printf(", ");
+				Console.WriteLine("%d", intArr_testCaseNumsTargetSumElems[i]);
+				Console.WriteLine(", ");
 			}
-			printf("%d", intArr_testCaseNumsTargetSumElems[(*intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
-			printf(" ]\n\n");
-			fflush(stdout);
+			Console.WriteLine("%d", intArr_testCaseNumsTargetSumElems[(intArr_testCaseNumsTargetSumElemsArrLen - 1)]);
+			Console.WriteLine(" ]\n\n");
+			//fflush(stdout);
 
 			// Free the memory after completing
 			// operations
-			free(intArr_testCaseNums);
-			free(intArr_testCaseNumsTargetSumElemsArrLen);
-			free(intArr_testCaseNumsTargetSumElems);
+			//free(intArr_testCaseNums);
+			//free(intArr_testCaseNumsTargetSumElemsArrLen);
+			//free(intArr_testCaseNumsTargetSumElems);
 
 			// statement 
 			// printing Hello World! 
