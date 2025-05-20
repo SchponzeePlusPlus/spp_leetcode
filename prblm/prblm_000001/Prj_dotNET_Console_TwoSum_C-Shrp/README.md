@@ -67,3 +67,50 @@ https://www.reddit.com/r/dotnet/comments/x2s9ue/net_60_default_gitignore_file/
 
 A default .NET Core project .gitignore file - or just type `dotnet new gitignore`
 https://gist.github.com/vmandic/ac2ecc9c24f6899ee0ec46e4ce444a0e
+
+### 20/05/2025 16:09:
+
+Two Sum - LeetCode
+https://leetcode.com/problems/two-sum/description/
+
+How to find the length of an Array in C# | GeeksforGeeks
+https://www.geeksforgeeks.org/how-to-find-the-length-of-an-array-in-c-sharp/
+
+Array Size (Length) in C# - Stack Overflow
+https://stackoverflow.com/questions/2843987/array-size-length-in-c-sharp
+
+Array Size (Length) in C# - Stack Overflow
+https://stackoverflow.com/questions/2843987/array-size-length-in-c-sharp
+
+An object reference is required for the non-static field, method, or property 'Solution.TwoSum(int[], int)' - Google Search
+https://www.google.com/search?q=An+object+reference+is+required+for+the+non-static+field%2C+method%2C+or+property+%27Solution.TwoSum(int%5B%5D%2C+int)%27&oq=An+object+reference+is+required+for+the+non-static+field%2C+method%2C+or+property+%27Solution.TwoSum(int%5B%5D%2C+int)%27&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAjIHCAIQIRiPAtIBBzk0MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+
+c# - CS0120: An object reference is required for the nonstatic field, method, or property 'foo' - Stack Overflow
+https://stackoverflow.com/questions/498400/cs0120-an-object-reference-is-required-for-the-nonstatic-field-method-or-prop
+
+What does `static` mean in c#? - Stack Overflow
+https://stackoverflow.com/questions/9410688/what-does-static-mean-in-c
+
+c++ - How to assign a variable a new object - Stack Overflow
+https://stackoverflow.com/questions/26328599/how-to-assign-a-variable-a-new-object
+
+Classes in the C# type system. - C# | Microsoft Learn
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes
+
+Partial Classes and Members - C# | Microsoft Learn
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
+
+Console.Write Method (System) | Microsoft Learn
+https://learn.microsoft.com/en-us/dotnet/api/system.console.write?view=net-9.0
+
+Methods - C# | Microsoft Learn
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods
+
+best software development pattern - Google Search
+https://www.google.com/search?q=best+software+development+pattern&oq=best+software+development+pattern&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyCggFEAAYgAQYogQyCggGEAAYgAQYogQyCggHEAAYgAQYogQyCggIEAAYgAQYogTSAQkxMDIxOWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+
+Software Design Patterns : r/softwaredevelopment
+https://www.reddit.com/r/softwaredevelopment/comments/18q1147/software_design_patterns/
+
+Head First Design Patterns : Freeman, Eric, Freeman, Elisabeth, Sierra, Kathy, Bates, Bert: Amazon.com.au: Books
+https://www.amazon.com.au/dp/0596007124?ref_=mr_referred_us_au_au#averageCustomerReviewsAnchor

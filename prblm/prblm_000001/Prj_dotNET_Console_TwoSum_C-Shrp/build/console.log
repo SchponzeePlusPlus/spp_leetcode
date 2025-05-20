@@ -1,0 +1,71 @@
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/Prj_dotNET_Console_TwoSum_C-Shrp$ ./build.sh
+
+This is a build shell script
+
+
+Files in Current Dirtectory:.
+
+bin  build  build.sh  main_old.c  obj  Prj_dotNET_Console_TwoSum_C-Shrp.csproj  Program.cs  README.md  run.sh
+Restore complete (0.6s)
+  Prj_dotNET_Console_TwoSum_C-Shrp succeeded (0.2s) → bin/Debug/net9.0/Prj_dotNET_Console_TwoSum_C-Shrp.dll
+
+Build succeeded in 1.3s
+
+End of shell script
+
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/Prj_dotNET_Console_TwoSum_C-Shrp$ ./run.sh
+
+This is a shell script to run the target program
+
+
+Files in Current Dirtectory:.
+
+
+bin  build  build.sh  main_old.c  obj  Prj_dotNET_Console_TwoSum_C-Shrp.csproj  Program.cs  README.md  run.sh
+
+Running Target Program:
+
+
+
+----------------------------------------
+Program Initialised.
+----------------------------------------
+
+
+Hello World!
+
+Test Case 1
+
+
+Input Data
+
+Test Case Input Array:  [ 2, 7, 11, 15 ]
+
+Test Case Number Array Element Length:  4
+
+Test Case Target Sum:   9
+
+About to enter twoSum() function...
+
+
+Output Data
+
+Test Case Sum Array Element Length:     2
+
+Test Case Output Array: [ 0, 1 ]
+
+X
+
+----------------------------------------
+Program Complete.
+Terminating Program...
+----------------------------------------
+
+
+
+Finished Running Target Program:
+
+
+End of shell script
+
+user@machine:~/Documents/Repos/GH/Spp/spp_leetcode/prblm/prblm_000001/Prj_dotNET_Console_TwoSum_C-Shrp$ 
